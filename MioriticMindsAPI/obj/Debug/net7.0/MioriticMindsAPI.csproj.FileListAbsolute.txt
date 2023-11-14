@@ -67,3 +67,7 @@ C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\De
 C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\Npgsql.dll
 C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\Humanizer.dll
+C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\Mono.TextTemplating.dll

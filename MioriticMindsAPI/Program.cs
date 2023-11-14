@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using MioriticMindsAPI.Models;
+using MioriticMindsAPI.Repository;
 using System.Text;
 using System.Text.Json.Serialization;
 
@@ -61,10 +62,12 @@ builder.Services.AddAuthentication(options =>
 });
 
 /*
-builder.Services.AddDbContext<BucketListDatabaseContext>(opt =>
+ * ADD YOUR DB CONNECTION STRING HERE
+ */
+builder.Services.AddDbContext<MioriticMindsDbContext>(opt =>
     opt.UseNpgsql(builder.Configuration.GetConnectionString("NicholasConnection"),
     options => options.CommandTimeout(60)));
-*/
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
