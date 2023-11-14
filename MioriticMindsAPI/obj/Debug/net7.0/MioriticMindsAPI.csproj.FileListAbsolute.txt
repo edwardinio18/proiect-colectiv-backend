@@ -64,3 +64,6 @@ C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\De
 C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\Npgsql.dll
+C:\OTHER\UBB FMI\SEM 5\COLECTIV\proiect-colectiv-backend\MioriticMindsAPI\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

@@ -60,7 +60,11 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-
+/*
+builder.Services.AddDbContext<BucketListDatabaseContext>(opt =>
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("NicholasConnection"),
+    options => options.CommandTimeout(60)));
+*/
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
