@@ -5,6 +5,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using MioriticMindsAPI.Models;
 using MioriticMindsAPI.Repository;
+using MioriticMindsAPI.Validation;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -17,11 +18,13 @@ namespace MioriticMindsAPI.Controllers
     {
         private readonly MioriticMindsDbContext _dbContext;
         private readonly JwtSetter _jwtSetter;
+        private readonly UserValidator _validator;
 
         public UserController(MioriticMindsDbContext dbContext, IOptions<JwtSetter> JwtSetter)
         {
             _dbContext = dbContext;
             _jwtSetter = JwtSetter.Value;
+            _validator = new UserValidator();
         }
 
         private string GenerateJwtToken(User user)
@@ -74,6 +77,37 @@ namespace MioriticMindsAPI.Controllers
             };
         }
 
+        [HttpPost("register")]
+        [AllowAnonymous]
+        public async Task<ActionResult<dynamic>> Register(UserDTO userDTO)
+        {
+            var validationResult = _validator.ValidateRegister(userDTO);
+            if (validationResult != string.Empty)
+                return BadRequest(validationResult);
 
+            if (await _dbContext.Users.AnyAsync(u => u.UserName == userDTO.Username))
+                return BadRequest("Username is already taken.");
+
+            var newUser = new User
+            {
+                UserName = userDTO.Username,
+                Password = userDTO.Password,
+                HighScoreMixed = 0,
+                HighScorePhotos = 0,
+                HighScoreText = 0
+            };
+
+            _dbContext.Users.Add(newUser);
+            await _dbContext.SaveChangesAsync();
+
+            var token = GenerateJwtToken(newUser);
+            newUser.Password = null;
+
+            return new
+            {
+                newUser,
+                token
+            };
+        }
     }
 }
