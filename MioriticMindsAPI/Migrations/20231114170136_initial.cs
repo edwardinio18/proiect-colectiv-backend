@@ -41,7 +41,6 @@ namespace MioriticMindsAPI.Migrations
                 {
                     table.PrimaryKey("PK_Users", x => x.Id);
                 });
-            
         }
 
         /// <inheritdoc />
