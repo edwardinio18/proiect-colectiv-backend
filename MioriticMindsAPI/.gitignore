@@ -2,3 +2,12 @@
 .vs/
 bin/
 obj/
+.vs/slnx.sqlite
+MioriticMindsAPI/.vs/MioriticMindsAPI/DesignTimeBuild/.dtbcache.v2
+MioriticMindsAPI/bin/Debug/net7.0/MioriticMindsAPI.dll
+MioriticMindsAPI/bin/Debug/net7.0/MioriticMindsAPI.pdb
+MioriticMindsAPI/obj/Debug/net7.0/MioriticMindsAPI.csproj.CoreCompileInputs.cache
+MioriticMindsAPI/obj/Debug/net7.0/MioriticMindsAPI.dll
+MioriticMindsAPI/obj/Debug/net7.0/MioriticMindsAPI.pdb
+MioriticMindsAPI/obj/Debug/net7.0/ref/MioriticMindsAPI.dll
+MioriticMindsAPI/obj/Debug/net7.0/refint/MioriticMindsAPI.dll
