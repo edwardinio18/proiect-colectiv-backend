@@ -1,0 +1,5 @@
+﻿# .gitignore
+.vs/
+MioriticMindsAPI/.vs/
+MioriticMindsAPI/bin/
+MioriticMindsAPI/obj/
