@@ -2998,19 +2998,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\OTHER\\UBB FMI\\SEM 5\\COLECTIV\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
       "projectName": "MioriticMindsAPI",
-      "projectPath": "C:\\OTHER\\UBB FMI\\SEM 5\\COLECTIV\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\OTHER\\UBB FMI\\SEM 5\\COLECTIV\\proiect-colectiv-backend\\MioriticMindsAPI\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\proiect-colectiv-backend\\MioriticMindsAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3018,7 +3018,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3091,7 +3090,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
