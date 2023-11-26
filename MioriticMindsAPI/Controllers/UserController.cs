@@ -109,5 +109,56 @@ namespace MioriticMindsAPI.Controllers
                 token
             };
         }
+
+        [HttpPut("mixed/{username}")]
+        [AllowAnonymous]
+        public async Task<ActionResult<User>> UpdateMixedHighScore(string username, int newHighScore)
+        {
+            var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.UserName == username);
+            if (user == null)
+                return NotFound();
+
+            if (newHighScore > user.HighScoreMixed)
+            {
+                user.HighScoreMixed = newHighScore;
+                await _dbContext.SaveChangesAsync();
+            }
+
+            return user;
+        }
+
+        [HttpPut("photos/{username}")]
+        [AllowAnonymous]
+        public async Task<ActionResult<User>> UpdatePhotosHighScore(string username, int newHighScore)
+        {
+            var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.UserName == username);
+            if (user == null)
+                return NotFound();
+
+            if (newHighScore > user.HighScorePhotos)
+            {
+                user.HighScorePhotos = newHighScore;
+                await _dbContext.SaveChangesAsync();
+            }
+
+            return user;
+        }
+
+        [HttpPut("text/{username}")]
+        [AllowAnonymous]
+        public async Task<ActionResult<User>> UpdateTextHighScore(string username, int newHighScore)
+        {
+            var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.UserName == username);
+            if (user == null)
+                return NotFound();
+
+            if (newHighScore > user.HighScoreText)
+            {
+                user.HighScoreText = newHighScore;
+                await _dbContext.SaveChangesAsync();
+            }
+
+            return user;
+        }
     }
 }
