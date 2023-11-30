@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OTHER\\UBB FMI\\SEM 5\\COLECTIV\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj": {}
+    "c:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj": {}
   },
   "projects": {
-    "C:\\OTHER\\UBB FMI\\SEM 5\\COLECTIV\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj": {
+    "c:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OTHER\\UBB FMI\\SEM 5\\COLECTIV\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
+        "projectUniqueName": "c:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
         "projectName": "MioriticMindsAPI",
-        "projectPath": "C:\\OTHER\\UBB FMI\\SEM 5\\COLECTIV\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\OTHER\\UBB FMI\\SEM 5\\COLECTIV\\proiect-colectiv-backend\\MioriticMindsAPI\\obj\\",
+        "projectPath": "c:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -95,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
