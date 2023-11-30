@@ -14,5 +14,6 @@ namespace MioriticMindsAPI.Repository
 
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Person> Persons { get; set; }
+        public virtual DbSet<Answer> Answers { get; set; }
     }
 }

@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MioriticMindsAPI.Migrations
 {
     [DbContext(typeof(MioriticMindsDbContext))]
-    [Migration("20231114170136_initial")]
+    [Migration("20231130200323_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -24,6 +24,26 @@ namespace MioriticMindsAPI.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("MioriticMindsAPI.Models.Answer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsCorrect")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Answers");
+                });
+
             modelBuilder.Entity("MioriticMindsAPI.Models.Person", b =>
                 {
                     b.Property<int>("Id")
@@ -31,6 +51,9 @@ namespace MioriticMindsAPI.Migrations
                         .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsFemale")
+                        .HasColumnType("boolean");
 
                     b.Property<bool>("IsNewAge")
                         .HasColumnType("boolean");

@@ -44,6 +44,13 @@ namespace MioriticMindsAPI.Controllers
             return tokenHandler.WriteToken(token);
         }
 
+        public static int GetUserFromToken(string token)
+        {
+            var claims = new JwtSecurityTokenHandler().ReadJwtToken(token).Claims;
+            var val = claims.ElementAt(0).Value;
+            return int.Parse(val);
+        }
+
         [HttpGet]
         [AllowAnonymous]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()

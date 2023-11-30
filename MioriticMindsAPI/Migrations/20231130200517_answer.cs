@@ -5,25 +5,25 @@
 namespace MioriticMindsAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class gender : Migration
+    public partial class answer : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<bool>(
-                name: "IsFemale",
-                table: "Persons",
-                type: "boolean",
+            migrationBuilder.AddColumn<int>(
+                name: "UserId",
+                table: "Answers",
+                type: "integer",
                 nullable: false,
-                defaultValue: false);
+                defaultValue: 0);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "IsFemale",
-                table: "Persons");
+                name: "UserId",
+                table: "Answers");
         }
     }
 }

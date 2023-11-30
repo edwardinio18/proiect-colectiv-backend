@@ -1,17 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
 using MioriticMindsAPI.Models;
 using MioriticMindsAPI.Repository;
-using MioriticMindsAPI.Validation;
-using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http.Headers;
-using System.Security.Claims;
-using System.Text;
 using Newtonsoft.Json.Linq;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace MioriticMindsAPI.Controllers
 {
