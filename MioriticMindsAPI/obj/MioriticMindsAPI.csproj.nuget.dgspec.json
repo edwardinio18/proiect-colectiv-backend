@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj": {}
+    "C:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj": {}
   },
   "projects": {
-    "c:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj": {
+    "C:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
+        "projectUniqueName": "C:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
         "projectName": "MioriticMindsAPI",
-        "projectPath": "c:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
+        "projectPath": "C:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
         "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\obj\\",
+        "outputPath": "C:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BiTWmHjoteHIGePv8Hv/xzJtdcVhh2BC6hkqtPH1klR4NtboBw891h1Ry/5wWiJVVeRYwTggmReZoGuxxQaTWA==",
+  "dgSpecHash": "VncgsHnbZlUiA+VOv9fNeVyfNHUby2pAOaaP/zD/Q2VqGQA+rHXQ9xA78pT6twahHXzyJAo9BdGrhujtqatuag==",
   "success": true,
-  "projectFilePath": "c:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
+  "projectFilePath": "C:\\Users\\maria\\Documents\\Code\\Proiect colectiv\\proiect-colectiv-backend\\MioriticMindsAPI\\MioriticMindsAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maria\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\maria\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
