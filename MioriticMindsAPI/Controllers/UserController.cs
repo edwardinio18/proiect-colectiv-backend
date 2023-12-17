@@ -161,7 +161,7 @@ namespace MioriticMindsAPI.Controllers
             return user;
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         [AllowAnonymous]
         public async Task<ActionResult<dynamic>> GetUserById(int id)
         {
