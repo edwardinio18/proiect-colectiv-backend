@@ -160,5 +160,28 @@ namespace MioriticMindsAPI.Controllers
 
             return user;
         }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<ActionResult<dynamic>> GetUserById(int id)
+        {
+            if (_dbContext == null)
+            {
+                return NotFound();
+            }
+            
+            var userToReturn = await _dbContext.Users.SingleOrDefaultAsync(x => x.Id == id);
+            if (userToReturn == null)
+            {
+                return NotFound();
+            }
+            
+            var userName = userToReturn.UserName;
+            if (userName == null)
+            {
+                return NotFound();
+            }
+            return userName;
+        }
     }
 }
