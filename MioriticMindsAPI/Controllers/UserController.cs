@@ -169,19 +169,37 @@ namespace MioriticMindsAPI.Controllers
             {
                 return NotFound();
             }
-            
+
             var userToReturn = await _dbContext.Users.SingleOrDefaultAsync(x => x.Id == id);
             if (userToReturn == null)
             {
                 return NotFound();
             }
-            
+
             var userName = userToReturn.UserName;
             if (userName == null)
             {
                 return NotFound();
             }
             return userName;
+
+            [HttpPut("UpdateHighScore")]
+            [AllowAnonymous]
+            public async Task<ActionResult<User>> UpdateUserHighScore(int id, UserScoreDTO userDto)
+            {
+                var userToUpdate = await _dbContext.Users.FindAsync(id);
+                if (userToUpdate == null)
+                {
+                    return BadRequest();
+                }
+                userToUpdate.HighScoreMixed = userDto.HighScoreMixed;
+                userToUpdate.HighScorePhotos = userDto.HighScorePhotos;
+                userToUpdate.HighScoreText = userDto.HighScoreText;
+
+                await _dbContext.SaveChangesAsync();
+
+                return userToUpdate;
+            }
         }
     }
 }
