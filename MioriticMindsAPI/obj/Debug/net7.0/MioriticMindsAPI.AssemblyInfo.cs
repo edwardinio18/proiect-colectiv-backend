@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MioriticMindsAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17f7738d61504da5f0eb71e8b8e9ebcddd93c08e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MioriticMindsAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MioriticMindsAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

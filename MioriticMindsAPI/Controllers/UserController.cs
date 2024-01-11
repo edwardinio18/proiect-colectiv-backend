@@ -201,5 +201,59 @@ namespace MioriticMindsAPI.Controllers
 
             return userToUpdate;
         }
+
+        [HttpPut("UpdateUsername/{id:int}")]
+        [AllowAnonymous]
+        public async Task<ActionResult<User>> UpdateUsername([FromRoute] int id, [FromBody] UserDTO userDTO)
+        {
+            int length = _dbContext.Users.Count();
+            for (int i = 1; i < length + 1; i++)
+            {
+                var toCheck = await _dbContext.Users.FindAsync(id);
+                if (toCheck == null)
+                {
+                    continue;
+                }
+                if (toCheck.UserName == userDTO.Username)
+                {
+                    return BadRequest();
+                }
+            }
+            var userToUpdate = await _dbContext.Users.FindAsync(id);
+            if (userToUpdate == null)
+            {
+                return BadRequest();
+            }
+            if (userToUpdate.Password != userDTO.Password)
+            {
+                return BadRequest();
+            }
+            userToUpdate.UserName = userDTO.Username;
+
+            await _dbContext.SaveChangesAsync();
+
+            return userToUpdate;
+        }
+
+        [HttpPut("UpdatePassword/{id:int}")]
+        [AllowAnonymous]
+        public async Task<ActionResult<User>> UpdatePassword([FromRoute] int id, [FromBody] UserDTO userDTO)
+        {
+
+            var userToUpdate = await _dbContext.Users.FindAsync(id);
+            if (userToUpdate == null)
+            {
+                return BadRequest();
+            }
+            if (userToUpdate.UserName != userDTO.Username)
+            {
+                return BadRequest();
+            }
+            userToUpdate.Password = userDTO.Password;
+
+            await _dbContext.SaveChangesAsync();
+
+            return userToUpdate;
+        }
     }
 }
