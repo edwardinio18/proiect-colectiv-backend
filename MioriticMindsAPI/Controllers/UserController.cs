@@ -204,7 +204,7 @@ namespace MioriticMindsAPI.Controllers
 
         [HttpPut("UpdateUsername/{id:int}")]
         [AllowAnonymous]
-        public async Task<ActionResult<User>> UpdateUsername([FromRoute] int id, [FromBody] UserDTO userDTO)
+        public async Task<ActionResult<User>> UpdateUsername([FromRoute] int id, [FromBody] UsernameDTO newUsername)
         {
             int length = _dbContext.Users.Count();
             for (int i = 1; i < length + 1; i++)
@@ -214,7 +214,7 @@ namespace MioriticMindsAPI.Controllers
                 {
                     continue;
                 }
-                if (toCheck.UserName == userDTO.Username)
+                if (toCheck.UserName == newUsername.Username)
                 {
                     return BadRequest();
                 }
@@ -224,11 +224,7 @@ namespace MioriticMindsAPI.Controllers
             {
                 return BadRequest();
             }
-            if (userToUpdate.Password != userDTO.Password)
-            {
-                return BadRequest();
-            }
-            userToUpdate.UserName = userDTO.Username;
+            userToUpdate.UserName = newUsername.Username;
 
             await _dbContext.SaveChangesAsync();
 
@@ -237,7 +233,7 @@ namespace MioriticMindsAPI.Controllers
 
         [HttpPut("UpdatePassword/{id:int}")]
         [AllowAnonymous]
-        public async Task<ActionResult<User>> UpdatePassword([FromRoute] int id, [FromBody] UserDTO userDTO)
+        public async Task<ActionResult<User>> UpdatePassword([FromRoute] int id, [FromBody] PasswordDTO newPassword)
         {
 
             var userToUpdate = await _dbContext.Users.FindAsync(id);
@@ -245,11 +241,7 @@ namespace MioriticMindsAPI.Controllers
             {
                 return BadRequest();
             }
-            if (userToUpdate.UserName != userDTO.Username)
-            {
-                return BadRequest();
-            }
-            userToUpdate.Password = userDTO.Password;
+            userToUpdate.Password = newPassword.Password;
 
             await _dbContext.SaveChangesAsync();
 
